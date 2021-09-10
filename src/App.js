@@ -8,7 +8,9 @@ const App = () => {
   return (
     <div id="flex">
       <div id="container">
-        <NavBar />
+        <div id="nav-box">
+          <NavBar />
+        </div>
         <Main />
         <Right />
       </div>
