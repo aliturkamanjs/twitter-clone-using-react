@@ -141,3 +141,9 @@
 #user-box {
   display: flex;
 }
+
+@media (min-width: 320px) and (max-width: 425px){
+  #container-nav {
+    display: none;
+  }
+}

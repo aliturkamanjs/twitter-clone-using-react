@@ -1,24 +1,27 @@
 #container {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#nav-box{
+#nav-box {
   width: 20%;
   /* border: 1px solid; */
-    height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
 }
 
-#flex {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 320px) and (max-width: 425px) {
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-box {
+    display: none;
+  }
 }

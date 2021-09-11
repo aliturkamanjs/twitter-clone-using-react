@@ -6,15 +6,18 @@ import Right from "./components/right/right";
 
 const App = () => {
   return (
-    <div id="flex">
+
       <div id="container">
         <div id="nav-box">
           <NavBar />
         </div>
         <Main />
+
+
         <Right />
+
       </div>
-    </div>
+
   );
 };
 

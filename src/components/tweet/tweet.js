@@ -28,7 +28,7 @@ const Tweet = (props) => {
       </div>
 
       <div id="box-tweet">
-        <div id="tweet-name-id-box">
+        <div id="name-id">
           <span id="flex-tweet">
             <p id="tweet-name">ali turkaman</p>
             <p id="tweet-id">@ATurkaman . </p>
@@ -36,7 +36,7 @@ const Tweet = (props) => {
           </span>
 
           <span id="span-more">
-            <CgMoreAlt />
+            <CgMoreAlt  />
           </span>
         </div>
 
