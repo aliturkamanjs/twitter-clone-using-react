@@ -6,18 +6,13 @@ import Right from "./components/right/right";
 
 const App = () => {
   return (
-
-      <div id="container">
-        <div id="nav-box">
-          <NavBar />
-        </div>
-        <Main />
-
-
-        <Right />
-
+    <div id="container">
+      <div id="nav-box">
+        <NavBar />
       </div>
-
+      <Main />
+      <Right />
+    </div>
   );
 };
 

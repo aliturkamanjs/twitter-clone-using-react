@@ -21,16 +21,18 @@ const Main = () => {
 
   return (
     <div id="container-main">
-      <div id="box-top">
-        <span id="back-icon-box">
-          <BiArrowBack id="back-icon" />
-        </span>
 
-        <div id="box-top-right">
-          <p id="name-header">ali turkaman</p>
-          <span id="tweets-number">22 Tweets</span>
+        <div id="box-top">
+          <span id="back-icon-box">
+            <BiArrowBack id="back-icon" />
+          </span>
+
+          <div id="box-top-right">
+            <p id="name-header">ali turkaman</p>
+            <span id="tweets-number">22 Tweets</span>
+          </div>
         </div>
-      </div>
+
 
       <div id="header-box">
         <div id="profile-image"></div>
@@ -110,15 +112,12 @@ const Main = () => {
         tweet="نمیفهمم چرا ادم باید سی شارپ کار کنه؟ بعد اینجاش جالبه که بعضی اموزشگاه های برنامه نویسی اول باید سی شارپ کار کنی و گرنه برنامه نویسی یاد نمیگیری!"
         likeNumber="60"
       />
-            <Tweet
+      <Tweet
         tweet="☃ چرا همه زمستونا سرما میخورن من تابستون عجییه برام"
         likeNumber="60"
       />
-            <Tweet
-        tweet="اگه وقت بزاری میشه ☄"
-        likeNumber="60"
-      />
-            <Tweet
+      <Tweet tweet="اگه وقت بزاری میشه ☄" likeNumber="60" />
+      <Tweet
         tweet="فکر نمیکردم یه دوره رو بتونم تو دو روز تموم  کنم"
         likeNumber="60"
       />

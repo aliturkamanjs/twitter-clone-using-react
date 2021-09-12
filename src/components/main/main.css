@@ -8,16 +8,14 @@
 }
 
 #box-top {
-  margin-top: -1px;
-  width: 35%;
+  width: 100%;
   height: 53px;
+  margin-top: -1px;
   background: #fff;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  position: fixed;
-  z-index: 10;
+  box-sizing: border-box;
   border-bottom: 0.1px solid #cacacac4;
+  z-index: 1000;
 }
 
 #back-icon {
@@ -54,8 +52,6 @@
   font-size: 18px;
 }
 
-
-
 #tweets-number {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -66,7 +62,7 @@
 #header-box {
   width: 100%;
   height: 200px;
-  margin-top: 53px;
+
   background-image: url(/src/components/images/header.jpg);
   background-position: center;
   background-size: cover;
@@ -320,7 +316,7 @@
 }
 
 #name-id {
-  width: 570px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -483,7 +479,7 @@
   color: #0099ff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 200px) and (max-width: 499px) {
   #container-main {
     width: 100%;
   }
@@ -507,7 +503,7 @@
     padding-left: 0px;
   }
 
-  #name-user{
+  #name-user {
     font-weight: bold;
     font-size: 18px;
     padding-left: 13px;
@@ -520,7 +516,7 @@
   #header-box {
     width: 100%;
     height: 120px;
-    margin-top: 42px;
+  
   }
 
   #profile-image {
@@ -534,196 +530,274 @@
     display: none;
   }
 
-  
-.following {
-  height: 32px;
+  .following {
+    height: 32px;
+  }
+
+  .Follow {
+    height: 32px;
+  }
+
+  #name-id-box {
+    margin-left: 0px;
+    padding-top: 2px;
+  }
+
+  #name-header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #name-user {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #id-user {
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+    padding-left: 13px;
+  }
+
+  #job-box {
+    padding-left: 13px;
+  }
+
+  #job {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 15px;
+  }
+
+  #date-box {
+    padding-left: 0px;
+  }
+
+  #date-icon {
+    font-size: 19px;
+    padding-left: 13px;
+  }
+
+  #date {
+    padding-left: 2px;
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+  }
+
+  #following-follow-box {
+    padding-left: 0px;
+  }
+
+  #number-follow {
+    font-size: 15px;
+    padding-left: 13px;
+  }
+
+  #follow-text {
+    margin-left: 3px;
+    font-size: 15px;
+  }
+
+  #box-nav {
+    height: 60px;
+  }
+
+  #nav {
+    font-size: 13px;
+  }
+
+  .box-Tweets {
+    width: 20%;
+    font-weight: bold;
+  }
+
+  .box-replies {
+    width: 36%;
+  }
+
+  .box-Media {
+    width: 20%;
+  }
+
+  .box-Likes {
+    width: 20%;
+  }
+
+  #line {
+    width: 50px;
+    height: 4px;
+    margin-left: 14px;
+    border-radius: 20px;
+    transform: translateY(-5px);
+  }
+
+  #tweet-box {
+    min-height: 40px;
+    border-bottom: 0.3px solid #e2e2e2c4;
+    display: flex;
+    padding: 5px;
+  }
+
+  #profile-tweet {
+    height: 100%;
+    width: 68px;
+  }
+
+  #image-profile {
+    padding: 4px;
+    padding-left: 3px;
+  }
+
+  #box-tweet {
+    padding-left: 1px;
+  }
+
+  #name-id {
+    width: 100%;
+  }
+
+  #tweet-name {
+    font-size: 15px;
+  }
+
+  #tweet-id {
+    margin-left: 5px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50px;
+  }
+
+  #tweet-date {
+    margin-left: 3px;
+    font-size: 14px;
+  }
+
+  #text-tweet {
+    text-align: right;
+    margin-right: 3px;
+    font-size: 13px;
+  }
+
+  #nav-bottom-post {
+    width: 95%;
+    height: 18px;
+    margin-top: 19px;
+    margin-bottom: 8px;
+  }
+
+  #box-tweet {
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  #nav-icon-box {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+  #post-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+  }
+
+  #profile-tweet {
+    height: 10%;
+    width: 68px;
+  }
 }
 
-.Follow {
-  height: 32px;
+@media screen and (min-width: 500px) and (max-width: 1005px) {
+  #container-main {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #name-id {
+    width: 100%;
+  }
+
+  #name-id-box {
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+
+  #name-user {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 16px;
+    margin-top: 13px;
+  }
+
+  #id-user {
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  #date-box {
+    padding-left: 0px;
+  }
+
+  #date-icon {
+    font-size: 19px;
+    padding-left: 16px;
+  }
+
+  #following-follow-box {
+    padding-left: 0px;
+  }
+
+  #number-follow {
+    font-size: 15px;
+    padding-left: 17px;
+  }
+
+  #box-top {
+    width: 100%;
+  }
+
+  #back-icon-box {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin-left: 14px;
+  }
+
+  #flex-box-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header-box {
+    width: 100%;
+    height: 200px;
+    background-image: url(/src/components/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
-#name-id-box {
-  margin-left: 0px;
-  padding-top: 2px;
-}
-
-#name-header {
-  font-weight: bold;
-  font-size: 18px;
-
-}
-
-#name-user{
-  font-weight: bold;
-  font-size: 18px;
-
-}
-
-#id-user {
-  color: rgb(73, 73, 73);
-  font-size: 14px;
-  padding-left: 13px;
-}
-
-#job-box {
-  padding-left: 13px;
-}
-
-#job {
-  margin-top: 13px;
-  margin-bottom: 13px;
-  font-size: 15px;
-}
-
-#date-box {
-  padding-left: 0px;
-}
-
-#date-icon {
-  font-size: 19px;
-  padding-left: 13px;
-}
-
-#date {
-  padding-left: 2px;
-  font-size: 15px;
-  color: rgb(94, 94, 94);
-}
-
-#following-follow-box {
-  padding-left: 0px;
-}
-
-#number-follow {
-  font-size: 15px;
-  padding-left: 13px;
-}
-
-#follow-text {
-  margin-left: 3px;
-  font-size: 15px;
-}
-
-#box-nav {
-  height: 60px;
-}
-
-#nav{
-  font-size: 13px;
-}
-
-.box-Tweets {
-  width: 20%;
-  font-weight: bold;
-}
-
-.box-replies {
-  width: 36%;
-
-}
-
-.box-Media {
-  width: 20%;
-
-}
-
-.box-Likes {
-  width: 20%;
-
-}
-
-#line {
-  width: 50px;
-  height: 4px;
-  margin-left: 14px;
-  border-radius: 20px;
-  transform: translateY(-5px);
-}
-
-#tweet-box {
-  min-height: 40px;
-  border-bottom: 0.3px solid #e2e2e2c4;
-  display: flex;
-  padding: 5px;
-}
-
-#profile-tweet {
-  height: 100%;
-  width: 68px;
-}
-
-#image-profile {
-  padding: 4px;
-  padding-left: 3px;
-}
-
-
-#box-tweet {
-  padding-left: 1px;
-}
-
-#name-id {
-  width: 100%;
-}
-
-#tweet-name {
-  font-size: 15px;
-}
-
-#tweet-id {
-  margin-left: 5px;
-  font-size: 14px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 50px;
-}
-
-#tweet-date {
-  margin-left: 3px;
-  font-size: 14px;
-}
-
-#text-tweet { 
-  text-align: right;
-  margin-right: 3px;
-  font-size: 13px;
-}
-
-#nav-bottom-post {
-  width: 95%;
-  height: 18px;
-  margin-top: 19px;
-  margin-bottom: 8px;
-}
-
-#box-tweet {
-  width: 90%;
-  padding-left: 10px;
-}
-
-#nav-icon-box {
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-#post-box {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 8px;
-}
-
-#profile-tweet {
-  height: 10%;
-  width: 68px;
-}
-
+@media screen and (min-width: 1005px) and (max-width: 1281px) {
+  #name-id {
+    width: 100%;
+  }
 }

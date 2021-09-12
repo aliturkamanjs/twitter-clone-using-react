@@ -11,7 +11,7 @@ const Right = () => {
     <div id="container-right">
       <div id="fixed-search">
         <div id="search-box">
-          <input placeholder="Search Twitter" id="serch-input" type="text" />
+          <input placeholder=" Search Twitter" id="serch-input" type="text" />
           <RiSearchLine id="search-icon" />
         </div>
       </div>

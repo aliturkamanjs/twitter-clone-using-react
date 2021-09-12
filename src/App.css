@@ -14,7 +14,7 @@
   justify-content: flex-start;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 200px) and (max-width: 499px) {
   #container {
     width: 100%;
     display: flex;
@@ -23,5 +23,31 @@
 
   #nav-box {
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1005px) {
+  #container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-box {
+    width: 15%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1005px) and (max-width: 1281px){
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-box {
+    width: 8%;
+    justify-content: center;
   }
 }

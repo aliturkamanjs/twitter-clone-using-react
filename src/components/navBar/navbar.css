@@ -1,13 +1,13 @@
 #container-nav {
   width: 20%;
   /* border: 1px solid; */
-    height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-    position: fixed;
+  position: fixed;
 }
 
 #twitter-icon {
@@ -142,8 +142,79 @@
   display: flex;
 }
 
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 200px) and (max-width: 499px) {
   #container-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1281px) {
+  #container-nav {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nav-title {
+    display: none;
+  }
+
+  #tweet {
+    display: none;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #id {
+    display: none;
+  }
+
+  #more-bottom {
+    display: none;
+  }
+
+  #bottom-nav {
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  #person {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #row {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+
+  #twitter-box {
+    width: 50px;
+    height: 50px;
+    margin-top: 13px;
+    margin-left: 0px;
+  }
+
+  
+}
+
+@media screen and (min-width: 1005px) and (max-width: 1281px) {
+  #container-nav {
+    width: 5%;
   }
 }

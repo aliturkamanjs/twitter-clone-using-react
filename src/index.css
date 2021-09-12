@@ -13,12 +13,21 @@ body {
   padding: 0;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 200px) and (max-width: 499px) {
   body {
     margin: 0;
     padding: 0;
     display: contents;
     flex-direction: unset;
+  }
+}
 
+@media screen and (min-width: 500px) and (max-width: 1005px) {
+  #root {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

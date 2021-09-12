@@ -10,7 +10,7 @@
 }
 
 #serch-input {
-  width: 73%;
+  width: 100%;
   height: 40px;
   border: 0.5px solid #eff3f4;
   background: #eff3f4;
@@ -21,13 +21,12 @@
 }
 
 #search-box {
-  width: 18%;
+  width: 90%;
   height: 40px;
   margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 }
 
 #fixed-search {
@@ -43,7 +42,7 @@
 #search-icon {
   font-size: 20px;
   position: absolute;
-  transform: translateX(-118px);
+  transform: translateX(-700%);
   color: #7c7c7c;
 }
 
@@ -376,8 +375,52 @@
   margin-top: 2px;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 200px) and (max-width: 499px) {
   #container-right{
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1005px){
+  #container-right{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 1005px) and (max-width: 1281px) {
+  #name-might {
+    font-size: 14px;
+  }
+
+  #search-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translateX(-550%);
+    color: #7c7c7c;
+  }
+
+  #row_ {
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+  }
+
+  #id-might {
+    color: #666666;
+  }
+
+  #follow-might {
+    width: 70px;
+    height: 30px;
+    margin-right: 8px;
+  }
+
+  #following-might {
+    width: 70px;
+    height: 30px;
+    margin-right: 8px;
+    font-size: 11px;
   }
 }
